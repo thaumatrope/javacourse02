@@ -6,6 +6,7 @@ public class App {
 		// TODO Auto-generated method stub
 
 		System.out.println("This is a test app");
+		System.out.println("for GIT testing!");
 	}
 
 }
