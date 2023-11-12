@@ -20,7 +20,10 @@ public class App
         
         var stmt = conn.createStatement();
         
-        var sql = "create table user (id interger primary key)";
+        var sql1 = "drop table user";
+        var sql2 = "create table user (id integer primary key, name text not null)";
+        stmt.execute(sql1);
+        stmt.execute(sql2);
         
         stmt.close();
         		
