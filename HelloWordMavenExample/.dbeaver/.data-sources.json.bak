@@ -13,19 +13,6 @@
 				"type": "dev",
 				"auth-model": "native"
 			}
-		},
-		"sqlite_jdbc-18bc473bfac-13aba8d2734a6c67": {
-			"provider": "sqlite",
-			"driver": "sqlite_jdbc",
-			"name": "people.db 2",
-			"save-password": true,
-			"configuration": {
-				"database": "C:\\Users\\John Westfield\\git\\javacourse02\\SQLitePerparedStatements\\people.db",
-				"url": "jdbc:sqlite:C:\\Users\\John Westfield\\git\\javacourse02\\SQLitePerparedStatements\\people.db",
-				"configurationType": "MANUAL",
-				"type": "dev",
-				"auth-model": "native"
-			}
 		}
 	},
 	"connection-types": {

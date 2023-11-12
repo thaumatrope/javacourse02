@@ -13,7 +13,7 @@ public class App
     {
         Class.forName("org.sqlite.JDBC");
         
-        String dbURL = "jdbc:sqlite:people.db"; 
+        String dbURL = "jdbc:sqlitePreparedStatements:people.db"; 
         var conn = DriverManager.getConnection(dbURL);
         
         //System.out.println(conn);
