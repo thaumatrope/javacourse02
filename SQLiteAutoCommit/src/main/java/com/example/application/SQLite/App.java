@@ -3,14 +3,13 @@ package com.example.application.SQLite;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args ) throws ClassNotFoundException, SQLException
     {
+        int[] ids = {0,1,2,3};
+        String[] names = {"Sue", "Bob", "Suzie", "Frankie"};
+        
         Class.forName("org.sqlite.JDBC");
         
         String dbURL = "jdbc:sqlite:people.db"; 
@@ -26,10 +25,20 @@ public class App
         stmt.execute(sql2);
         
         // normal statements
-        var sql3 = "insert into user(id, name) values (0, 'Bob')";
-        stmt.execute(sql3);
-        var sql4 = "insert into user(id, name) values (1, 'Mary')";
-        stmt.execute(sql4);
+//        var sql3 = "insert into user(id, name) values (0, 'Bob')";
+//        stmt.execute(sql3);
+//        var sql4 = "insert into user(id, name) values (1, 'Mary')";
+//        stmt.execute(sql4);
+        
+        //prepared statements        
+        var sql3 = "insert into user(id, name) values (?,?)";
+        var insertStmt = conn.prepareStatement(sql3);
+        for(int i = 0; i < ids.length; i++) {
+        	// columns start numbering with 1 !! not 0
+        	insertStmt.setInt(1, ids[i]);
+        	insertStmt.setString(2, names[i]);
+        	insertStmt.executeUpdate();
+        }
         
         var sql5 = "select id, name from user";
         var rs = stmt.executeQuery(sql5);

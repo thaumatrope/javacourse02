@@ -17,7 +17,7 @@
 		"sqlite_jdbc-18bc473bfac-13aba8d2734a6c67": {
 			"provider": "sqlite",
 			"driver": "sqlite_jdbc",
-			"name": "people.db 2",
+			"name": "people.db PreparedStatements",
 			"save-password": true,
 			"configuration": {
 				"database": "C:\\Users\\John Westfield\\git\\javacourse02\\SQLitePerparedStatements\\people.db",
