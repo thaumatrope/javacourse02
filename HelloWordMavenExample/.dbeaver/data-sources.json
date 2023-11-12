@@ -1,0 +1,32 @@
+{
+	"folders": {},
+	"connections": {
+		"sqlite_jdbc-18bc3aba036-3673d721b706959a": {
+			"provider": "sqlite",
+			"driver": "sqlite_jdbc",
+			"name": "people.db",
+			"save-password": true,
+			"configuration": {
+				"database": "C:\\Users\\John Westfield\\git\\javacourse02\\SQLite\\people.db",
+				"url": "jdbc:sqlite:C:\\Users\\John Westfield\\git\\javacourse02\\SQLite\\people.db",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"auth-model": "native"
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"smart-commit": false,
+			"smart-commit-recover": false,
+			"auto-close-transactions": true,
+			"close-transactions-period": 1800
+		}
+	}
+}
