@@ -26,6 +26,19 @@
 				"type": "dev",
 				"auth-model": "native"
 			}
+		},
+		"sqlite_jdbc-18bc5eea81f-15dd0db37ee38281": {
+			"provider": "sqlite",
+			"driver": "sqlite_jdbc",
+			"name": "people.db AutoCommit",
+			"save-password": true,
+			"configuration": {
+				"database": "C:\\Users\\John Westfield\\git\\javacourse02\\SQLiteAutoCommit\\people.db",
+				"url": "jdbc:sqlite:C:\\Users\\John Westfield\\git\\javacourse02\\SQLiteAutoCommit\\people.db",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"auth-model": "native"
+			}
 		}
 	},
 	"connection-types": {
