@@ -1,4 +1,4 @@
-package com.example.application.SQLite;
+package com.example.application.SQLiteAutoCommit;
 
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -24,12 +24,8 @@ public class App
         stmt.execute(sql1);
         stmt.execute(sql2);
         
-        // normal statements
-//        var sql3 = "insert into user(id, name) values (0, 'Bob')";
-//        stmt.execute(sql3);
-//        var sql4 = "insert into user(id, name) values (1, 'Mary')";
-//        stmt.execute(sql4);
-        
+        // turn autocommit off
+        conn.setAutoCommit(false);
         //prepared statements        
         var sql3 = "insert into user(id, name) values (?,?)";
         var insertStmt = conn.prepareStatement(sql3);

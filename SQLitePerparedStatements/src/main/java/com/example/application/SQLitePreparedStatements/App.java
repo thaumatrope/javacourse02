@@ -1,4 +1,4 @@
-package com.example.application.SQLite;
+package com.example.application.SQLitePreparedStatements;
 
 import java.sql.DriverManager;
 import java.sql.SQLException;
