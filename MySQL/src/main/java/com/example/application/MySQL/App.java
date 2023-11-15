@@ -10,10 +10,10 @@ public class App
         int[] ids = {0,1,2,3};
         String[] names = {"Sue", "Bob", "Suzie", "Frankie"};
         
-        Class.forName("org.sqlite.JDBC");
+        Class.forName("com.mysql.cj.jdbc.Driver");
         
-        String dbURL = "jdbc:sqlite:people.db"; 
-        var conn = DriverManager.getConnection(dbURL);
+        String dbURL = "jdbc:mysql://192.168.178.35:3306/people"; 
+        var conn = DriverManager.getConnection(dbURL, "john", "hacker");
         
         //System.out.println(conn);
         
