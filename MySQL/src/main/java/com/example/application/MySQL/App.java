@@ -1,4 +1,4 @@
-package com.example.application.SQLiteAutoCommit;
+package com.example.application.MySQL;
 
 import java.sql.DriverManager;
 import java.sql.SQLException;
